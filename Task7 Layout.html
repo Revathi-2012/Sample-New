@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Layout</title>
+    <style>
+        div.container{
+            width: 100px;
+            border:1px solid grey
+        }
+        header,footer{
+            padding: 1em;
+            color:rgb(255,255,255);
+            background-color: #b460b4;
+            clear:left;
+            text-align: center;
+        }
+        nav{
+          float:left;
+          max-width: 180px;
+          margin:0;
+          padding: 1em;
+
+        }
+        nav ul{
+            list-style-type:none;
+            padding: 0;
+        }
+        nav ul a{
+            text-decoration: none;
+        }
+        article{
+            margin-left: 170px;
+            border-left:1px solid grey;
+            padding: 1em;
+            overflow: hidden;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="div.container">
+        <header>
+            <h1>html layout</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="/home.html">home</a></li>
+                <li><a href="/about.html">about</a></li>
+                <li><a href="/contact.html">contact</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h2>Layout</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Natus excepturi quidem labore quam dolore reiciendis officia inventore cupiditate temporibus autem quis laudantium, 
+                dignissimos quisquam animi exercitationem esse repellendus amet odit?</p> 
+                
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Ad expedita quasi quod minima dolorum unde inventore doloremque delectus dolore,
+                sapiente nobis sequi, eos aut quos quas labore magni. Sapiente, dolor?</p> 
+                    
+        </article>
+        
+        <footer> copyright@abc</footer>
+    </div>
+</body>
+</html>
