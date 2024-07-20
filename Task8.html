@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Information Form</title>
+    <!-- link rel="stylesheet" href="D:\Web Development\HTML\Task8.css" -->
+</head>
+<body>
+    <div class="form-container">
+        <h2>Customer Information Form</h2>
+        <p>Please fill out the customer information form below to join. Fields marked with a red star are mandatory.</p>
+        <hr>
+        <form>
+            <label for="title">Customer Name*</label>
+            <div class="section">
+                <select id="title" name="title" >
+                    <option value="">Title</option>
+                    <option value="mr">Mr.</option>
+                    <option value="mrs">Mrs.</option>
+                    <option value="ms">Ms.</option>
+                </select>
+                <input type="text" id="first-name" name="first-name" placeholder="First" >
+                <input type="text" id="initials" name="initials" placeholder="Initials">
+                <input type="text"  id="Last-name" name="last-name" placeholder="Last">
+            </div>
+            <label for="address">Customer Address*</label>
+            <input type="text" id="address" name="address" placeholder="Street Address Line 1" >
+            <input type="text" id="address2" name="address2" placeholder="Street Address Line 2">
+            <div class="details">
+                <input type="text" id="city" name="city" placeholder="City" required>
+                <input type="text" id="region" name="region" placeholder="Region" required>
+            </div>
+            <div class="details">
+                <input type="text" id="postal-code" name="postal-code" placeholder="Postal / Zip Code" >
+                <input type="text" id="country" name="country" placeholder="Country">
+            </div>
+            <div class="details">
+                <input type="tel" id="phone" name="phone" placeholder="Phone">
+                <input type="tel" id="fax" name="fax" placeholder="Customer Fax">
+            </div>
+            <div class="personal">
+                <input type="date" id="dob" name="dob" placeholder=" Date of Birth">
+                <input type="email" id="email" name="email" placeholder="Email" >
+            </div>
+            <p>All customer information will be kept with discretion and will not be used for other marketing or advertisement purposes without customer approval.</p>
+            <div class="checkbox-section">
+                <input type="checkbox" id="future-campaigns" name="future-campaigns">
+                <label for="future-campaigns">I allow my information to be used for future campaigns</label>
+            </div>
+            <button type="submit">Send Information</button>
+        </form>
+    </div>
+</body>
+</html>
+    
+</body>
+</html>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.355);
+    margin: 0;
+    padding: 0;
+}
+
+.form-container {
+    width: 50%;
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(43, 41, 41, 0.1);
+    border-radius: 25px;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, select, button {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.select{
+    margin-right: 5px;
+}
+.section, .details, .details, .personal
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section input, .details input, .details input, .personal input {
+    flex: 1;
+    margin-right: 5px;
+}
+
+.checkbox-section {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 30%;
+    width: 40%;
+}
+
+button:hover {
+    background-color: #218838;
+
+}
+</style>
