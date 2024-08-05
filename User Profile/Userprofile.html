@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <style>
+        * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container {
+    width: 90%;
+    margin: auto;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+.header-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.section-wrapper {
+    margin: 20px 0px;
+    width: 100%;
+}
+.content {
+    display: flex;
+    justify-content: space-around;
+}
+.nav-section {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+li {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 50px;
+}
+.active {
+    border-right: 3px solid red ;
+    padding: 7px 50px 7px 0px;
+}
+ul>li:last-child {
+    padding-top: 90px;
+    color: red;
+}
+ul>li:last-child img{
+    rotate: 180deg;
+}
+.content-section {
+    margin-top: 60px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+h4,span{
+    margin: 10px;
+}
+form {
+    width: 100%;
+    margin: auto;
+}
+.section {
+    width: 80%;
+}
+.section>div:last-child {
+   margin-top: 50px;
+}
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0px;
+}
+.col-6 {
+    width: 50%;
+}
+form .row .col-6>input {
+    padding: 8px;
+    border-radius: 8px;
+}
+.btn {
+    padding-top: 30px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+.btn input {
+    padding: 10px 30px;
+    background-color: rgb(250, 137, 8);
+    color: white;
+    border-radius: 15px;
+}
+    </style>
+</head>
+<body>
+    <div class="header-wrapper">
+        <div class="container">
+            <div class="header">
+                <div>
+                    <img src="Images/menu.png" alt="" height="20px">
+                </div>
+                <div class="header-right">
+                    <img src="Images/notifications.png" alt="" height="20px">
+                    <img src="Images/women.jpg" alt="" height="20px">
+                    <span>Sara Tancredi</span>
+                    <img src="Images/down-arrow.png" alt="" height="20px">
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+    <div class="section-wrapper">
+       <div class="container">
+        <div class="content">
+            <div class="nav-section">
+                <div><h2>User Profile</h2></div>
+                <i class='fas fa-user-alt'></i>
+                <div>
+                    <ul>
+                        <li class="active"><img src="Images/user1.png" alt="" height="20px">User Info</li>
+                        <li><img src="Images/heart.png" alt="" height="20px">Favorites</li>
+                        <li><img src="Images/star.png" alt="" height="20px">Watchlist</li>
+                        <li><img src="Images/settings.png" alt="" height="20px">Setting</li>
+                        <li><img src="Images/bell.png" alt="" height="20px">Notification</li>
+                        <li><img src="Images/logout.png" alt="" height="20px">Log out</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content-section">
+              <div class="section">
+                <div class="profile">
+                    <div>
+                        <img src="Images/women.jpg" alt="" height="100px">
+                    </div>
+                    <div>
+                        <h4>Sara Tancredi</h4>
+                        <span>New York,USA</span>
+                    </div>
+                   </div>
+                  <div>
+                    <form>
+                       <div class="row">
+                        <div class="col-6">
+                            <label for="name">Name</label><br>
+                            <input type="text" name="name" id="name">
+                        </div>
+                           <div class="col-6">
+                            <label for="fname">Full Name</label><br>
+                            <input type="text" name="fname" id="fname">
+                           </div>
+                       </div>
+                       <div class="row">
+                        <div class="col-6">
+                            <label for="email">Email Address</label><br>
+                            <input type="email" name="email" id="email">
+                        </div>
+                           <div class="col-6">
+                            <label for="phno">Phone Number</label><br>
+                            <input type="tel" name="phno" id="phno">
+                           </div>
+                       </div>
+                       <div class="row">
+                        <div class="col-6">
+                            <label for="location">Location</label><br>
+                            <input type="text" name="location" id="location">
+                        </div>
+                           <div class="col-6">
+                            <label for="pincode">Pin Code</label><br>
+                            <input type="number" name="pincode" id="pincode">
+                           </div>
+                       </div>
+                    </form>
+                  </div> 
+                  <div class="btn">
+                    <input type="submit" value="Save Changes">
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
