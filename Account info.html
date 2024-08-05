@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzler - Account Information</title>
+    <style>
+        *{margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, sans-serif;
+}
+
+body {
+display: flex;
+height: 100vh;
+background-color: #f0f0f3f1;
+}
+
+.container {
+display: flex;
+width: 900%;
+}
+
+.sidebar {
+width: 250px;
+background-color: #dad3d3ea;
+color: #fff;
+padding: 20px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+ h2 {
+    position: relative;
+    color: black;
+    left: 70px;
+    bottom: 90px;
+
+}
+
+.sidebar nav ul {
+list-style: none;
+}
+
+.sidebar nav ul li {
+margin-bottom: 15px;
+}
+
+.sidebar nav ul li a {
+color: #1b0101;
+text-decoration: none;
+position: relative;
+bottom: 100px;
+}
+
+.sidebar nav ul li.active > a {
+font-weight: bold;
+position: relative;
+}
+select {
+    font-weight: 50px;
+    padding: 7px;
+}
+select:hover{
+    background-color: rgb(148, 227, 243);
+
+}
+
+.sidebar nav ul li ul {
+list-style: none;
+position: relative;
+margin-left: 20px;
+}
+
+.sidebar nav ul li ul li a {
+font-size: 24px;
+position: relative;
+top: 50px;
+}
+
+.sidebar .logout {
+color: #130101;
+text-decoration: none;
+font-weight: bold;
+position: relative;
+margin-bottom: 20px;
+}
+nav ul li img{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    bottom: 100px;
+    margin-right: 20px;
+}
+#a{
+    margin-bottom: 40px;
+}
+
+.main-content {
+flex-grow: 1;
+padding: 20px;
+}
+
+.header {
+display: flex;
+justify-content: end;
+align-items: center;
+margin-bottom: 20px;
+}
+.header input{
+    width: 400px;
+    padding: 8px;
+
+}
+
+
+.header .profile {
+display: flex;
+align-items: center;
+margin-right: 50px;
+}
+
+.header .profile img {
+width: 40px;
+height: 40px;
+border-radius: 50%;
+margin-left: 290px;
+}
+
+.account-info h1 {
+margin-bottom: 20px;
+}
+
+form {
+background-color: #fff;
+padding: 20px;
+border-radius: 5px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+margin-bottom: 15px;
+
+
+}
+.form-group-1{
+    display: flex;
+}
+.t{
+    position: relative;
+    left: 90px;
+}
+
+.form-group label{
+display: flex;
+margin-bottom: 5px;
+width: 480px;
+}
+
+.form-group input,
+.form-group textarea {
+width: 100%;
+padding: 15px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+.form-actions {
+text-align: center;
+}
+
+.form-actions button {
+background-color: #28a745;
+width: 270px;
+color: #fff;
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+cursor: pointer;
+}
+</style>
+
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <img style="width: 50px; height: 50px;" src="Images/logo.png">
+            <h2 >Puzzler</h2>
+            <nav>
+                <ul>
+                    <li><img src="Images/Dashboard.png"><a href="#">Dashboard</a></li>
+                    <li><img src="Images/order.png"><a href="#">Order </a></li>
+                    <li><img src="Images/product.png"><a href="#">product</a></li>
+                    <li><img src="Images/customer.png"><a href="#">Customer</a></li>
+                    <li><img src="Images/employee.png"><a href="#">Employee</a></li>
+                    <li><img src="Images/billing.png"><a href="#">Billing</a></li>
+                    <li><img src="Images/Analytics.png"><a href="#">Analytics</a></li>
+
+                    <li class="active"><img src="Images/settings.png"><a href="#">Settings</a>
+                    </a>
+                        <select style="position: relative; bottom: 90px; left: 40px; ">
+                            <ul>
+                                <option>
+                                    <li>Account Information</li>
+                                </option>
+                                <option>
+                                    <li>Change Password</li>
+                                </option>
+                                <option>
+                                    <li>Notification</li>
+                                </option>
+                                <option>
+                                    <li>Personalization</a></li>
+                                </option>
+                                <option>
+                                    <li>Security & Privacy</a></li>
+                                </option>
+                            </ul>
+                        </select>
+                    </li>
+
+                </ul>
+            </nav>
+            <a href="#" style="color: black; text-decoration: none;"   class="help">Help</a>
+            <div id="a"><img style="width: 15px; height: 15ox; " src="Images/logout.png"> <a href="#"
+                    class="logout">Log out</a>
+            </div>
+        </aside>
+        <main class="main-content">
+            <header class="header">
+                <div class="profile">
+                    
+                    <input type="text" value="search">
+                    <img src="Images/notifications.png" alt="">
+                    <img src="Images/profile.jpg" alt="">
+                    <span>Lilly</span>
+                    <img src="Images/down-arrow.png" alt="">
+
+
+                    
+                </div>
+            </header>
+            <section class="account-info">
+                <h1>Account Information</h1>
+
+                <img style="width: 70px; height: 60px; border-radius: 50%;"
+                    src="Images/profile.jpg">
+                <form>
+                    <div class="form-group-1">
+                        <div class="form-group">
+
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" name="first-name" value="Lilly">
+
+                        </div>
+                        <div class="t">
+                            <div class="form-group">
+                                <label for="last-name">Last Name</label>
+                                <input type="text" id="last-name" name="last-name" value="Rose">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group-1">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" value="lilly123@example.com">
+                        </div>
+                        <div class="t">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="text" id="phone" name="phone" value="(209) 555-0104">
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="form-group-1">
+                        <div class="form-group">
+                            <label for="dob">Date of Birth</label>
+                            <input type="text" id="dob" name="dob" value="17 nov, 1996">
+                        </div>
+                        <div class="form-group">
+                            <div class="t">
+                                <label for="country">Country</label>
+                                <input type="text" id="country" name="country" value="Bangladesh">
+                                <option><input type="text" id="country" name="country" value="India">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="bio">Bio</label>
+                        <textarea id="bio" name="bio">
+                            The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham
+                        </textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit">Save</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
